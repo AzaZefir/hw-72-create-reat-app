@@ -4,8 +4,7 @@ import pic from "../src/images.jpg";
 import StringComponent from "./components/string";
 import Names from "./components/nameList";
 import Counter from "./components/counter";
-
-
+import Hide from "./components/hide";
 
 const FirstComponent = (props) => {
   return (
@@ -22,10 +21,11 @@ function App() {
       <p>Hello world!!!</p>
       <FirstComponent text="hello world component" />
       <FirstComponent img src={pic} />
-      <StringComponent animal='animal'/>
-      <StringComponent beast='grizzle' />
+      <StringComponent animal="animal" />
+      <StringComponent beast="grizzle" />
       <Names />
-      <Counter/>
+      <Counter />
+      <Hide />
     </div>
   );
 }
