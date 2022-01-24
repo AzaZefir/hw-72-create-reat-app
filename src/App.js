@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import pic from "../src/images.jpg";
 import StringComponent from "./components/string";
+import Names from "./components/nameList";
+import Counter from "./components/counter";
 
 
 
@@ -21,7 +23,9 @@ function App() {
       <FirstComponent text="hello world component" />
       <FirstComponent img src={pic} />
       <StringComponent animal='animal'/>
-      <StringComponent beast='grizzle'/>
+      <StringComponent beast='grizzle' />
+      <Names />
+      <Counter/>
     </div>
   );
 }
