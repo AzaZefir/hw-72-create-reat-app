@@ -5,6 +5,7 @@ import StringComponent from "./components/string";
 import Names from "./components/nameList";
 import Counter from "./components/counter";
 import Hide from "./components/hide";
+import NameForm from "./components/input";
 
 const FirstComponent = (props) => {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Names />
       <Counter />
       <Hide />
+      <NameForm/>
     </div>
   );
 }
