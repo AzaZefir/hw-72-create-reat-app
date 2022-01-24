@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+
+import "./App.css";
+import pic from "../src/images.jpg";
+
+const FirstComponent = (props) => {
+  return (
+    <div>
+      {props.text}
+      <img src={props.src} alt=''></img>
+    </div>
+  );
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <p>Hello world!!!</p>
+        <FirstComponent text="hello world component" />
+        <FirstComponent img src={pic} />
+
     </div>
   );
 }
