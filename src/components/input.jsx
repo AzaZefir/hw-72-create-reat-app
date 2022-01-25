@@ -24,20 +24,45 @@ class NameForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="form" onSubmit={this.handleSubmit}>
         <label>
           Имя:
-          <input
+          <input className="formtext"
             type="text"
             value={this.state.value}
             onChange={this.handleChange}
           />
         </label>
-        <input type="submit" value="Отправить" />
+        <input className="formtext" type="submit" value="Отправить" />
         {this.state.isShown && <div>{JSON.stringify(this.state)}</div>}
       </form>
     );
   }
 }
+/* <form>
+<label>
+  Имя:
+  <input
+    type="text"
+    value={this.state.value}
+    onChange={this.handleChange}
+  />
+</label>
+<input type="submit" value="Отправить" onClick={this.handleSubmit} />
+{this.state !== "" && this.state.isShown ? (
+  <div>
+    <span>{this.state.isShown}</span>
+    <span>{this.state.value}</span>
+    <hr/>
+    <span>{this.state.value *0.5}</span>
+    <hr/>
+    <span>{this.state.value *.05}</span>
+  </div>
+) : (
+  ""
+)}
+</form> */
+
+
 
 export default NameForm;

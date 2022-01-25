@@ -1,0 +1,48 @@
+
+
+$bg: #989;
+$text: lighten($bg,36%);
+
+.roundedborder {
+  border: 2px solid darken($bg, 10%);
+}
+
+/* General Layout */
+body {
+  background: $bg; 
+  color:$text; 
+  font-family:Century Gothic;
+}
+
+form { 
+  font-size:1.2em; 
+  margin: 2em auto; 
+  padding:2em;
+  width:30%;
+}
+
+input, select, textarea {outline:none;}
+label {padding:0 .5em 0 .5em;}
+
+
+input[type='text'] {
+  background-color: darken($bg, 5%);
+  color: lighten($text, 10%);
+  font-size:2em;
+  margin:.2em 0 1em;
+  padding: .25em;
+  width:100%;
+}
+
+
+/* Submit Button */
+input[type='submit'] {
+  border: 3px solid darken($bg, 10%);
+  background-color:lighten($bg, 5%);
+  cursor:pointer;
+  color:lighten($bg,50%);
+  float:right;
+  font-size:1.5em;
+  padding: .25em 1em;
+}
+input[type='submit']:hover {background-color:darken($bg,5%);}
