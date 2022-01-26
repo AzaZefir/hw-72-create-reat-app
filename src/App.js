@@ -7,6 +7,7 @@ import Counter from "./components/counter";
 import Hide from "./components/hide";
 import NameForm from "./components/input";
 import Form from "./components/form";
+import TodoList from "./components/toDo/TodoList";
 
 const FirstComponent = (props) => {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Hide />
       <NameForm />
       <Form />
+      <TodoList/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 @import './components/form.module.scss';
-
+@import './components/toDo/Todo.module.scss';
 
 .App {
   text-align: center;
@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
