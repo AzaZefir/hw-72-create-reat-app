@@ -10,6 +10,7 @@ import Form from "./components/form/form";
 import TodoList from "./components/toDo/TodoList";
 import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import ErrorBoundary from "./components/errorBoundary/errorboundary";
+// import Switch from "./components/theme/main";
 
 const FirstComponent = (props) => {
   return (
@@ -46,6 +47,7 @@ function App() {
             </li>
           </ul>
           <hr />
+          {/* <Switch/> */}
           <p>Hello world!!!</p>
           <FirstComponent text="hello world component" />
           <FirstComponent img src={pic} />
